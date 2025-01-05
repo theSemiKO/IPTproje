@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    color: #fff;
+    padding: 1rem;
+}
+
+
+
+/* Ana İçerik Düzeni */
+#main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* Sol Alan: Filmler */
+#movies-container {
+    flex: 3;
+}
+
+/* Arama Kutusu */
+.search-box {
+    display: px;
+    margin-bottom: 1rem;
+}
+
+.search-box input {
+    width: 250px; /* Burayı artırabilirsiniz, örneğin 500px */
+    padding: 8px;
+    border: 1px solid #fff; /* Kırmızı kenarlık yerine beyaz */
+    background-color: #333;
+    color: #fff;
+}
+
+
+.search-box button {
+    padding: 12px 15px;
+    background-color: #444;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #555;
+}
+
+/* Film Kartları */
+#result {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    width: 200px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: #444;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #555;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #666;
+}
+
+/* Sağ Alan: Sidebar */
+#sidebar {
+    flex: 1;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+#suggestion-container h2 {
+    font-size: 1.8rem;
+    /* Başlık boyutu artırıldı */
+    font-weight: bold;
+    /* Kalın yazı stili */
+    color: #ff9800;
+    /* Hafif turuncu renk (isteğe bağlı) */
+    text-align: center;
+    /* Ortaladı */
+    margin-bottom: 15px;
+    /* Alt boşluk eklendi */
+}
+
+
+
+/* IMDB Listesi */
+#imdb-container {
+    margin-bottom: 1px;
+}
+
+#imdb-container h2 {
+    font-size: 1.8rem;
+    /* Başlık boyutunu artırdım */
+    font-weight: bold;
+    /* Yazı stili kalınlaştırıldı */
+    color: #ff9800;
+    /* Hafif turuncu renk (isteğe bağlı, renk koruyabilirsiniz) */
+    text-align: center;
+    /* Ortaladı */
+    margin-bottom: 15px;
+    /* Alt boşluk eklendi */
+}
+
+
+#imdb-list {
+    list-style: none;
+    padding: 0;
+}
+
+#imdb-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #444;
+}
+
+/* Favoriler */
+#favorites-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#favorites-list {
+    list-style: none;
+    padding: 0;
+}
+
+#favorites-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #444;
+}
